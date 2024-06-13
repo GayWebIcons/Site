@@ -1,8 +1,8 @@
 site_name: My Docs
-site_url: https://gayicons.github.io/icons
+site_url: https://gaywebicons.xyz
 site_author: David Gerard
 site_description: A collection of icons of gay Websites as a Web font.
-site_dir: site
+site_dir: _site
 strict: true
 theme:
   name: material

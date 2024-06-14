@@ -54,6 +54,7 @@ jobs:
       - name: Run a multi-line script
         run: |
           cp icons/README.md ./site/docs/index.md
+          cp icons/LICENSE.md ./site/docs/LICENSE.md
           pip install mkdocs-material
           cd site && mkdocs build
 

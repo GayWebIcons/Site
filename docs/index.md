@@ -1,17 +1,12 @@
-# Welcome to MkDocs
+# Welcome to Gay Web Icons!
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+An iconset for the gay community, by the gay community, of logos for gay Websites, Apps, and other digital media, as a Web font!
 
-## Commands
+## Installation
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+Add the following to your HTML file:
 
-## Project layout
+```html
+<link rel="stylesheet" href="https://cdn.gaywebicons.xyz/style.css" />
+```
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.

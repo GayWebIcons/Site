@@ -9,6 +9,12 @@ theme:
   features:
     - content.code.copy
     - content.code.select
+  palette:
+    scheme: slate
+    primary: pink
+    accent: purple
+  logo: assets/icon.png
+  favicon: assets/icon.png
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
@@ -19,3 +25,22 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+plugins:
+  - privacy
+extra:
+  consent:
+    actions:
+      - accept
+      - reject
+      - manage
+    title: Cookie consent
+    description: >-
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+    cookies:
+      analytics:
+        name: Google analytics
+      github:
+        name: GitHub Cookies

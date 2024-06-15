@@ -12,7 +12,7 @@ on:
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
-  
+
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
@@ -41,7 +41,7 @@ jobs:
           ref: main
           token: ${{ secrets.GITHUB_TOKEN }}
           path: site
-          
+
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
         with:
@@ -55,6 +55,7 @@ jobs:
         run: |
           cp icons/README.md ./site/docs/index.md
           cp icons/LICENSE.md ./site/docs/LICENSE.md
+          cp -R icons/assets/*.* ./site/_site/assets/
           cp -R icons/source-svg/ ./site/docs/
           pip install mkdocs-material
           cd site && mkdocs build

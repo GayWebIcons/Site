@@ -49,4 +49,4 @@ extra:
       github:
         name: GitHub Cookies
 extra_css:
-  - stylesheets/extra.css
+  - https://cdn.gaywebicons.xyz/style.css

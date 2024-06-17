@@ -62,11 +62,11 @@ jobs:
       - name: Copy files from other repos
         shell: pwsh
         run: |
-          Copy-Item -Path icons/README.md -Destination ./site/docs/index.md
-          Copy-Item -Path icons/LICENSE.md -Destination ./site/docs/LICENSE.md
-          Copy-Item -Path icons/assets/icon.png -Destination ./site/docs/assets/icon.png
-          Copy-Item -Path icons/source-svg -Destination ./site/docs -Recurse
-          Copy-Item -Path github/*.* -Destination ./site/docs/
+          Copy-Item -Path ./icons/README.md -Destination ./site/docs/index.md
+          Copy-Item -Path ./icons/LICENSE.md -Destination ./site/docs/LICENSE.md
+          Copy-Item -Path ./icons/assets/icon.png -Destination ./site/docs/assets/icon.png
+          Copy-Item -Path ./icons/source-svg -Destination ./site/docs -Recurse
+          Copy-Item -Path ./github/*.* -Destination ./site/docs/
 
       - name: Install mkdocs
         run: pip install mkdocs-material

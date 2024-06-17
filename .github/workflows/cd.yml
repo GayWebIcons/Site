@@ -52,11 +52,12 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
+        shell: pwsh
         run: |
-          cp icons/README.md ./site/docs/index.md
-          cp icons/LICENSE.md ./site/docs/LICENSE.md
-          cp -R icons/assets ./site/_site/assets
-          cp -R icons/source-svg ./site/docs
+          Copy-Item -Path icons/README.md -Destination ./site/docs/index.md
+          Copy-Item -Path icons/LICENSE.md -Destination ./site/docs/LICENSE.md
+          Copy-Item -Path icons/assets -Destination ./site/_site/assets/assets -Recurse
+          Copy-Item -Path icons/source-svg -Destination ./site/docs -Recurse
           pip install mkdocs-material
           cd site && mkdocs build
 

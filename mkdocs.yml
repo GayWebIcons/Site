@@ -29,6 +29,7 @@ markdown_extensions:
   - pymdownx.superfences
 plugins:
   - privacy
+  - blog
 extra:
   consent:
     actions:

@@ -17,7 +17,7 @@ theme:
     accent: purple
   logo: assets/icon.png
   favicon: assets/icon.png
-  custom_dir: overrides
+  custom_dir: docs/overrides
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true

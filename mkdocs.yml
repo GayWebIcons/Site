@@ -51,4 +51,3 @@ extra:
         name: GitHub Cookies
 extra_css:
   - https://cdn.gaywebicons.xyz/style.css
-  - docs/stylesheets/extra.css

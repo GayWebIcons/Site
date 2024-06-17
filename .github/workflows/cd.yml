@@ -55,7 +55,7 @@ jobs:
         run: |
           cp icons/README.md ./site/docs/index.md
           cp icons/LICENSE.md ./site/docs/LICENSE.md
-          cp -R icons/assets ./site/_site/assets/assets
+          cp -R icons/assets ./site/_site/assets
           cp -R icons/source-svg ./site/docs
           pip install mkdocs-material
           cd site && mkdocs build

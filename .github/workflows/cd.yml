@@ -50,6 +50,14 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           path: icons
 
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v4
+        with:
+          repository: GayWebIcons/.github
+          ref: main
+          token: ${{ secrets.GITHUB_TOKEN }}
+          path: github
+
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         shell: pwsh
@@ -58,6 +66,7 @@ jobs:
           Copy-Item -Path icons/LICENSE.md -Destination ./site/docs/LICENSE.md
           Copy-Item -Path icons/assets -Destination ./site/_site/assets/assets -Recurse
           Copy-Item -Path icons/source-svg -Destination ./site/docs -Recurse
+          Copy-Item -Path github/*.* -Destination ./site/docs/
           pip install mkdocs-material
           cd site && mkdocs build
 

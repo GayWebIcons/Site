@@ -9,6 +9,8 @@ theme:
   features:
     - content.code.copy
     - content.code.select
+    - announce.dismiss
+    - header.autohide
   palette:
     scheme: slate
     primary: pink

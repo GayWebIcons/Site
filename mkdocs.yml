@@ -17,6 +17,7 @@ theme:
     accent: purple
   logo: assets/icon.png
   favicon: assets/icon.png
+  custom_dir: overrides
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
@@ -47,3 +48,5 @@ extra:
         name: Google analytics
       github:
         name: GitHub Cookies
+extra_css:
+  - stylesheets/extra.css

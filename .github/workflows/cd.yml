@@ -43,18 +43,18 @@ jobs:
           path: site
 
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v4
+      - uses: dgmjr-actions/git-checkout@main
         with:
           repository: GayWebIcons/Icons
-          ref: main
+          branch: main
           token: ${{ secrets.GITHUB_TOKEN }}
           path: icons
 
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v4
+      - uses: dgmjr-actions/git-checkout@main
         with:
           repository: GayWebIcons/.github
-          ref: main
+          branch: main
           token: ${{ secrets.GITHUB_TOKEN }}
           path: github
 

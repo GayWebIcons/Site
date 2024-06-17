@@ -3,7 +3,7 @@ site_url: https://gaywebicons.xyz
 site_author: David Gerard
 site_description: A collection of icons of gay Websites as a Web font.
 site_dir: _site
-strict: true
+strict: false
 theme:
   name: material
   features:
